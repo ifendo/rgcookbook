@@ -47,7 +47,7 @@ In this sample data set, the *x* variable, Time, is in one column and the *y* va
 BOD
 ```
 
-Line graphs can be made with discrete (categorical) or continuous (numeric) variables on the x-axis. In the example here, the variable demand is numeric, but it could be treated as a categorical variable by converting it to a factor with `factor()` (Figure \@ref(fig:FIG-LINE-GRAPH-BASIC-LINE-FACTOR)). When the *x* variable is a factor, you must also use `aes(group=1)` to ensure that ggplot knows that the data points belong together and should be connected with a line (see Recipe \@ref(RECIPE-LINE-GRAPH-MULTIPLE-LINE) for an explanation of why group is needed with factors):
+Line graphs can be made with discrete (categorical) or continuous (numeric) variables on the x-axis. In the example here, the variable Time is numeric, but it could be treated as a categorical variable by converting it to a factor with `factor()` (Figure \@ref(fig:FIG-LINE-GRAPH-BASIC-LINE-FACTOR)). When the *x* variable is a factor, you must also use `aes(group=1)` to ensure that ggplot knows that the data points belong together and should be connected with a line (see Recipe \@ref(RECIPE-LINE-GRAPH-MULTIPLE-LINE) for an explanation of why group is needed with factors):
 
 ```{r FIG-LINE-GRAPH-BASIC-LINE-FACTOR, fig.cap="Basic line graph with a factor on the x-axis (notice that no space is allocated on the x-axis for 6)"}
 BOD1 <- BOD  # Make a copy of the data
